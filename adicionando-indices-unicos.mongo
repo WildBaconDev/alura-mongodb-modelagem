@@ -1,0 +1,3 @@
+db.artigos.dropIndex('')
+db.artigos.createIndexes([{ slug: 1 }], { unique: true })
+db.artigos.getIndexes()

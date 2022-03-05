@@ -1,0 +1,17 @@
+db.info.autores.update({
+        nome: 'Gabriel Ferreira'
+    },
+    {
+        $set: {
+            nome: 'Gabs Ferreira'
+        }
+    }
+);
+
+db.artigos.update({
+    'autor.nome': 'Gabriel Ferreira'
+}, {
+    $set: {
+        'autor.nome': 'Gabs Ferreira'
+    }
+}, { multi: true })

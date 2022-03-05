@@ -1,0 +1,6 @@
+db.autores.insertOne({
+    nome: 'Gabriel Ferreira',
+    descricao: 'blah',
+    email: 'gabs@caelum.com.br',
+    senha: 'gabs1234'
+});
